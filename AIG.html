@@ -3,10 +3,11 @@
 <head>
 
     <!--Import Google Icon Font-->
-    <link href="/materialize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <!--Import custom CSS-->
+    <link type="text/css" rel="stylesheet" href="css/AIG.css" > 
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,12 +15,51 @@
 
     <title>Alpaca Image Generator</title>
 
+    <style>
+        .absolute {
+        position: absolute;
+        }
+        .relative{
+            position: relative;
+        }
+        button.btn {
+            margin: 10px;
+        }
+    </style>
+
 </head>
 <body>
     
     <div class="container row">
-        <div class="col s4"></div>
-        <div class="col s8"></div>
+        <h2 class="col s12">ALPACA IMAGE GENERATOR</h2>
+        <!--Image section-->
+        <div class="col s4 relative">
+            <img class="responsive-img col s12 absolute" src="/assets/alpaca/backgrounds/blue50.png">
+            <img class="responsive-img col s12 absolute" src="/assets/alpaca/neck/default.png">
+            <img class="responsive-img col s12 absolute" src="/assets/alpaca/ears/default.png">
+            <img class="responsive-img col s12 absolute" src="/assets/alpaca/accessories/earings.png">
+            <img class="responsive-img col s12 absolute" src="/assets/alpaca/leg/default.png">
+            <img class="responsive-img col s12 absolute" src="/assets/alpaca/hair/default.png">
+            <img class="responsive-img col s12 absolute" src="/assets/alpaca/mouth/default.png">
+            <img class="responsive-img col s12 absolute" src="/assets/alpaca/eyes/default.png">
+            <img class="responsive-img col s12 absolute" src="/assets/alpaca/nose.png">
+        </div>
+
+        <!--Buttons Section-->
+        <div class="col s8">
+            <h4 class="col s12">Accessorize the Alpaca</h4>
+            <button class="btn waves-effect waves-light">Backgrounds</button>
+            <button class="btn waves-effect waves-light">Neck</button>
+            <button class="btn waves-effect waves-light">Ears</button>
+            <button class="btn waves-effect waves-light">Legs</button>
+            <button class="btn waves-effect waves-light">Hair</button>
+            <button class="btn waves-effect waves-light">Mouth</button>
+            <button class="btn waves-effect waves-light">Eyes</button>
+            <button class="btn waves-effect waves-light">Accessories</button>
+
+            <h4 class="col s12">Style</h4>
+            
+        </div>
     </div>
 
 
@@ -27,6 +67,7 @@
 
 
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="materialize.js"></script>
+    <script type="text/javascript" src="javascript/materialize.js"></script>
+    <script type="text/javascript" src="javascript/AIG.js">
 </body>
 </html>
