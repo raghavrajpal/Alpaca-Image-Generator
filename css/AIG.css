@@ -7,3 +7,13 @@ button.btn {
 .relative{
     position: relative;
 }
+
+#section_neck,
+#section_ears,
+#section_leg,
+#section_hair,
+#section_mouth,
+#section_eyes,
+#section_accessories{
+    display: none;
+}
