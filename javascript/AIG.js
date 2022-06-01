@@ -205,11 +205,55 @@ accessories_btn.onclick = function() {
     background_section.style.display = "none";
 }
 
+//Image Change Js
 
+document.querySelectorAll('.btn-bg').forEach(item => {
+    item.addEventListener('click', (event) => {
+      document.getElementById('back_img').src = "/assets/alpaca/backgrounds/" + event.target.value + ".png";
+  })
+  })
 
+  document.querySelectorAll('.btn-neck').forEach(item => {
+    item.addEventListener('click', (event) => {
+      document.getElementById('neck_img').src = "/assets/alpaca/neck/" + event.target.value + ".png";
+  })
+  })
 
+  document.querySelectorAll('.btn-ears').forEach(item => {
+    item.addEventListener('click', (event) => {
+      document.getElementById('ears_img').src = "/assets/alpaca/ears/" + event.target.value + ".png";
+  })
+  })
 
+  document.querySelectorAll('.btn-leg').forEach(item => {
+    item.addEventListener('click', (event) => {
+      document.getElementById('leg_img').src = "/assets/alpaca/leg/" + event.target.value + ".png";
+  })
+  })
 
+  document.querySelectorAll('.btn-hair').forEach(item => {
+    item.addEventListener('click', (event) => {
+      document.getElementById('hair_img').src = "/assets/alpaca/hair/" + event.target.value + ".png";
+  })
+  })
+
+  document.querySelectorAll('.btn-mouth').forEach(item => {
+    item.addEventListener('click', (event) => {
+      document.getElementById('mouth_img').src = "/assets/alpaca/mouth/" + event.target.value + ".png";
+  })
+  })
+
+  document.querySelectorAll('.btn-eyes').forEach(item => {
+    item.addEventListener('click', (event) => {
+      document.getElementById('eyes_img').src = "/assets/alpaca/eyes/" + event.target.value + ".png";
+  })
+  })
+
+  document.querySelectorAll('.btn-accessories').forEach(item => {
+    item.addEventListener('click', (event) => {
+      document.getElementById('accessories_img').src = "/assets/alpaca/accessories/" + event.target.value + ".png";
+  })
+  })
 
 
 
