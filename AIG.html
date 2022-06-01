@@ -5,7 +5,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection">
     <!--Import custom CSS-->
     <link type="text/css" rel="stylesheet" href="css/AIG.css" > 
 
@@ -15,20 +15,8 @@
 
     <title>Alpaca Image Generator</title>
 
-    <style>
-        .absolute {
-        position: absolute;
-        }
-        .relative{
-            position: relative;
-        }
-        button.btn {
-            margin: 10px;
-        }
-    </style>
-
 </head>
-<body>
+<body class="purpl lighten-5">
     
     <div class="container row">
         <h2 class="col s12">ALPACA IMAGE GENERATOR</h2>
@@ -47,17 +35,98 @@
 
         <!--Buttons Section-->
         <div class="col s8">
+            
+            <!--Accessories type buttons-->
             <h4 class="col s12">Accessorize the Alpaca</h4>
-            <button class="btn waves-effect waves-light">Backgrounds</button>
-            <button class="btn waves-effect waves-light">Neck</button>
-            <button class="btn waves-effect waves-light">Ears</button>
-            <button class="btn waves-effect waves-light">Legs</button>
-            <button class="btn waves-effect waves-light">Hair</button>
-            <button class="btn waves-effect waves-light">Mouth</button>
-            <button class="btn waves-effect waves-light">Eyes</button>
-            <button class="btn waves-effect waves-light">Accessories</button>
+            <button class="btn waves-effect waves-light btn-background">Backgrounds</button>
+            <button class="btn waves-effect waves-light btn-neck">Neck</button>
+            <button class="btn waves-effect waves-light btn-ears">Ears</button>
+            <button class="btn waves-effect waves-light btn-leg">Leg</button>
+            <button class="btn waves-effect waves-light btn-hair">Hair</button>
+            <button class="btn waves-effect waves-light btn-mouth">Mouth</button>
+            <button class="btn waves-effect waves-light btn-eyes">Eyes</button>
+            <button class="btn waves-effect waves-light btn-accessories">Accessories</button>
 
+            <!--Accessories style buttons-->
             <h4 class="col s12">Style</h4>
+
+            <div class="section--background">
+                <button class="btn waves-effect waves-light background--blue50">Blue50</button>
+                <button class="btn waves-effect waves-light background--blue60">Blue60</button>
+                <button class="btn waves-effect waves-light background--blue70">Blue70</button>
+                <button class="btn waves-effect waves-light background--darkblue30">Darkblue30</button>
+                <button class="btn waves-effect waves-light background--darkblue50">Darkblue50</button>
+                <button class="btn waves-effect waves-light background--darkblue70">Darkblue70</button>
+                <button class="btn waves-effect waves-light background--green50">Green50</button>
+                <button class="btn waves-effect waves-light background--green60">Green60</button>
+                <button class="btn waves-effect waves-light background--green70">Green70</button>
+                <button class="btn waves-effect waves-light background--grey40">Grey40</button>
+                <button class="btn waves-effect waves-light background--grey70">Grey70</button>
+                <button class="btn waves-effect waves-light background--grey80">Grey80</button>
+                <button class="btn waves-effect waves-light background--red50">Red50</button>
+                <button class="btn waves-effect waves-light background--red60">Red60</button>
+                <button class="btn waves-effect waves-light background--red70">Red70</button>
+                <button class="btn waves-effect waves-light background--yellow50">Yellow50</button>
+                <button class="btn waves-effect waves-light background--yellow60">Yellow60</button>
+                <button class="btn waves-effect waves-light background--yellow70">Yellow70</button>
+            </div>
+
+            <div class="section--neck">
+                <button class="btn waves-effect waves-light neck--default">Default</button>
+                <button class="btn waves-effect waves-light neck--thick">Thick</button>
+                <button class="btn waves-effect waves-light neck--forward">Forward</button>
+                <button class="btn waves-effect waves-light neck--backward">backward</button>
+            </div>
+
+            <div class="section--ears">
+                <button class="btn waves-effect waves-light ears--default">Default</button>
+                <button class="btn waves-effect waves-light ears--backward">Tilt Backward</button>
+                <button class="btn waves-effect waves-light ears--forward">Tilt Forward</button>
+            </div>
+
+            <div class="section--leg">
+                <button class="btn waves-effect waves-light leg--default">Default</button>
+                <button class="btn waves-effect waves-light leg--cookie">Cookie</button>
+                <button class="btn waves-effect waves-light leg--bubble">Bubble Tea</button>
+                <button class="btn waves-effect waves-light leg--game">Game Console</button>
+                <button class="btn waves-effect waves-light leg--forward">Forward</button>
+                <button class="btn waves-effect waves-light leg--backward">backward</button>
+            </div>
+
+            <div class="section--hair">
+                <button class="btn waves-effect waves-light hair--default">Default</button>
+                <button class="btn waves-effect waves-light hair--bang">Bang</button>
+                <button class="btn waves-effect waves-light hair--curls">Curls</button>
+                <button class="btn waves-effect waves-light hair--elegant">Elegant</button>
+                <button class="btn waves-effect waves-light hair--fancy">Fancy</button>
+                <button class="btn waves-effect waves-light hair--quiff">Quiff</button>
+                <button class="btn waves-effect waves-light hair--short">Short</button>
+            </div>
+
+            <div class="section--mouth">
+                <button class="btn waves-effect waves-light mouth--default">Default</button>
+                <button class="btn waves-effect waves-light mouth--astonished">Astonished</button>
+                <button class="btn waves-effect waves-light mouth--eating">Eating</button>
+                <button class="btn waves-effect waves-light mouth--laugh">Laugh</button>
+                <button class="btn waves-effect waves-light mouth--tongue">Tongue</button>
+            </div>
+
+            <div class="section--eyes">
+                <button class="btn waves-effect waves-light eyes--default">Default</button>
+                <button class="btn waves-effect waves-light eyes--angry">Angry</button>
+                <button class="btn waves-effect waves-light eyes--naughty">Naughty</button>
+                <button class="btn waves-effect waves-light eyes--panda">Panda</button>
+                <button class="btn waves-effect waves-light eyes--smart">Smart</button>
+                <button class="btn waves-effect waves-light eyes--star">Star</button>
+            </div>
+
+            <div class="section--accessories">
+                <button class="btn waves-effect waves-light accessories--earings">earings</button>
+                <button class="btn waves-effect waves-light accessories--flower">flower</button>
+                <button class="btn waves-effect waves-light accessories--glasses">glasses</button>
+                <button class="btn waves-effect waves-light accessories--headphone">headphone</button>
+            </div>
+
             
         </div>
     </div>
@@ -68,6 +137,6 @@
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="javascript/materialize.js"></script>
-    <script type="text/javascript" src="javascript/AIG.js">
+    <script type="text/javascript" src="javascript/AIG.js"></script>
 </body>
 </html>
