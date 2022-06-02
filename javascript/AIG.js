@@ -108,6 +108,9 @@ const mouth_btn = document.getElementById('mouth');
 const eyes_btn = document.getElementById('eyes');
 const accessories_btn = document.getElementById('accessories');
 
+//heading select
+const seconday_heading = document.getElementById('secondary-heading');
+
 //section select
 const background_section = document.getElementById('section_background');
 const neck_section = document.getElementById('section_neck');
@@ -121,8 +124,8 @@ const accessories_section = document.getElementById('section_accessories');
 
 //display & hide secrions on primary button click
 
-
 background_btn.onclick = function() {
+    seconday_heading.style.display = "block";
     background_section.style.display = "block";
     neck_section.style.display = "none";
     ears_section.style.display = "none";
@@ -134,6 +137,7 @@ background_btn.onclick = function() {
 }
 
 neck_btn.onclick = function() {
+    seconday_heading.style.display = "block";
     neck_section.style.display = "block";
     background_section.style.display = "none";
     ears_section.style.display = "none";
@@ -145,6 +149,7 @@ neck_btn.onclick = function() {
 }
 
 ears_btn.onclick = function() {
+    seconday_heading.style.display = "block";
     ears_section.style.display = "block";
     neck_section.style.display = "none";
     background_section.style.display = "none";
@@ -155,6 +160,7 @@ ears_btn.onclick = function() {
     accessories_section.style.display = "none";
 }
 leg_btn.onclick = function() {
+    seconday_heading.style.display = "block";
     leg_section.style.display = "block";
     neck_section.style.display = "none";
     ears_section.style.display = "none";
@@ -165,6 +171,7 @@ leg_btn.onclick = function() {
     accessories_section.style.display = "none";
 }
 hair_btn.onclick = function() {
+    seconday_heading.style.display = "block";
     hair_section.style.display = "block";
     neck_section.style.display = "none";
     ears_section.style.display = "none";
@@ -175,6 +182,7 @@ hair_btn.onclick = function() {
     accessories_section.style.display = "none";
 }
 mouth_btn.onclick = function() {
+    seconday_heading.style.display = "block";
     mouth_section.style.display = "block";
     neck_section.style.display = "none";
     ears_section.style.display = "none";
@@ -185,6 +193,7 @@ mouth_btn.onclick = function() {
     accessories_section.style.display = "none";
 }
 eyes_btn.onclick = function() {
+    seconday_heading.style.display = "block";
     eyes_section.style.display = "block";
     neck_section.style.display = "none";
     ears_section.style.display = "none";
@@ -195,6 +204,7 @@ eyes_btn.onclick = function() {
     accessories_section.style.display = "none";
 }
 accessories_btn.onclick = function() {
+    seconday_heading.style.display = "block";
     accessories_section.style.display = "block";
     neck_section.style.display = "none";
     ears_section.style.display = "none";
