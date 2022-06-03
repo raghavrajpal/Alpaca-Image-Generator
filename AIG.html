@@ -13,45 +13,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Alpaca Image Generator</title>
+    <title>Alpaca Generator</title>
 
 </head>
-<body class="purpl lighten-5">
+<body class="">
+
+    <div id="partical-space">
+    <div id="particle-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    </div>
     
-    <div class=" row">
-        <h2 class="col s12">ALPACA IMAGE GENERATOR</h2>
+    <div class="bg-blur row">
+
+        <div class="col s12 center-align primary-heading"> ALPACA GENERATOR </div>
+
         <!--Image section-->
-        <div class="col s4 relative">
-            <img id="back_img" class="responsive-img col s12 absolute" src="/assets/alpaca/backgrounds/blue50.png">
-            <img id="neck_img" class="responsive-img col s12 absolute" src="/assets/alpaca/neck/default.png">
-            <img id="ears_img" class="responsive-img col s12 absolute" src="/assets/alpaca/ears/default.png">
-            <img id="leg_img" class="responsive-img col s12 absolute" src="/assets/alpaca/leg/default.png">
-            <img id="nose_img" class="responsive-img col s12 absolute" src="/assets/alpaca/nose.png">
-            <img id="hair_img" class="responsive-img col s12 absolute" src="/assets/alpaca/hair/default.png">
-            <img id="accessories_img" class="responsive-img col s12 absolute" src="/assets/alpaca/accessories/earings.png">
-            <img id="mouth_img" class="responsive-img col s12 absolute" src="/assets/alpaca/mouth/default.png">
-            <img id="eyes_img" class="responsive-img col s12 absolute" src="/assets/alpaca/eyes/default.png">
+        <div class="col s4">
+            <div class="rrcard">
+            <div class=" relative ">
+            <img id="back_img" class="responsive-img" src="/assets/alpaca/backgrounds/blue50.png">
+            <img id="neck_img" class="responsive-img  absolute" src="/assets/alpaca/neck/default.png">
+            <img id="ears_img" class="responsive-img  absolute" src="/assets/alpaca/ears/default.png">
+            <img id="leg_img" class="responsive-img  absolute" src="/assets/alpaca/leg/default.png">
+            <img id="nose_img" class="responsive-img  absolute" src="/assets/alpaca/nose.png">
+            <img id="hair_img" class="responsive-img  absolute" src="/assets/alpaca/hair/default.png">
+            <img id="accessories_img" class="responsive-img  absolute" src="/assets/alpaca/accessories/earings.png">
+            <img id="mouth_img" class="responsive-img  absolute" src="/assets/alpaca/mouth/default.png">
+            <img id="eyes_img" class="responsive-img  absolute" src="/assets/alpaca/eyes/default.png">
+            </div>
+            </div>
         </div>
 
         <!--Buttons Section-->
         <div class="col s8">
             
             <!--Accessories type buttons-->
-            <h4 class="col s12">Accessorize the Alpaca</h4>
-            <button id="background" class="btn waves-effect waves-light">Backgrounds</button>
-            <button id="neck" class="btn waves-effect waves-light ">Neck</button>
-            <button id="ears" class="btn waves-effect waves-light ">Ears</button>
-            <button id="leg" class="btn waves-effect waves-light ">Leg</button>
-            <button id="hair" class="btn waves-effect waves-light ">Hair</button>
-            <button id="mouth" class="btn waves-effect waves-light ">Mouth</button>
-            <button id="eyes" class="btn waves-effect waves-light ">Eyes</button>
-            <button id="accessories" class="btn waves-effect waves-light ">Accessories</button>
-
+            <div class="col s12 rrcard">
+            <h4 id="secondary-heading-1" class="col s12 brown-text heading2 ">ACCESSORIZE THE ALPACA</h4>
+            <button id="background" class="btn waves-effect waves-light purple darken-2">Backgrounds</button>
+            <button id="neck" class="btn waves-effect waves-light pink darken-2">Neck</button>
+            <button id="ears" class="btn waves-effect waves-light red accent-3">Ears</button>
+            <button id="leg" class="btn waves-effect waves-light indigo darken-3">Leg</button>
+            <button id="hair" class="btn waves-effect waves-light teal darken-2">Hair</button>
+            <button id="mouth" class="btn waves-effect waves-light cyan accent-3">Mouth</button>
+            <button id="eyes" class="btn waves-effect waves-light green darken-2">Eyes</button>
+            <button id="accessories" class="btn waves-effect waves-light deep-orange">Accessories</button>
+            </div> 
+            
+            
             <!--Accessories style buttons-->
-            <h4 id="secondary-heading" class="col s12">Style</h4>
+            <div id="section-style" class="col s12 rrcard">
+            <h4 id="secondary-heading-2" class="col s12 brown-text heading2">STYLE</h4>
 
             <div id="section_background">
-                <button value="blue50" class="btn waves-effect waves-light btn-bg">Blue50</button>
+                <button value="blue50" class="btn waves-effect waves-light btn-bg ">Blue50</button>
                 <button value="blue60" class="btn waves-effect waves-light btn-bg">Blue60</button>
                 <button value="blue70" class="btn waves-effect waves-light btn-bg">Blue70</button>
                 <button value="darkblue30"  class="btn waves-effect waves-light btn-bg">Darkblue30</button>
@@ -129,6 +174,7 @@
 
             
         </div>
+    </div>
     </div>
 
 
