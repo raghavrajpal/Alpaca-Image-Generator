@@ -407,7 +407,7 @@ tsParticles
       shape: {
         type: "character",
         character: {
-          value: ["🌙"]
+          value: ["⭐"]
         }
       }
     },
@@ -438,15 +438,19 @@ const random = document.getElementById('random');
     width: 0,
     height: 0
   },
-  startCount: 20,
+  startCount: 10,
   rate: {
     delay: 0,
     quantity: 0
   },
   life: {
-    duration: 0.1,
-    count: 2
-  }
+    duration: 0,
+    count: 1
+  },
+  position : {
+    x: 15,
+    y: 25
+  },
 });
 }
 
