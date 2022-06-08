@@ -395,7 +395,26 @@ bgBtnAll.forEach(item => {
     });
   });
 
-//random Click
+//random style & button color onclick
+
+loadConfettiPreset(tsParticles);
+
+let confettiContainer;
+
+tsParticles
+  .load("tsparticles", {
+    particles: {
+      shape: {
+        type: "character",
+        character: {
+          value: ["🌙"]
+        }
+      }
+    },
+    preset: "confetti",
+    emitters: []
+  })
+  .then((container) => (confettiContainer = container));
 
 const random = document.getElementById('random');
 
@@ -404,6 +423,8 @@ const random = document.getElementById('random');
  }
 
  random.onclick = function(){ 
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  random.style.backgroundColor = "#" + randomColor;
  randomBtnClick(bgBtnAll);
  randomBtnClick(neckBtnAll);
  randomBtnClick(earsBtnAll);
@@ -412,7 +433,29 @@ const random = document.getElementById('random');
  randomBtnClick(mouthBtnAll);
  randomBtnClick(eyesBtnAll);
  randomBtnClick(accBtnAll);
+ confettiContainer.addEmitter({
+  size: {
+    width: 0,
+    height: 0
+  },
+  startCount: 20,
+  rate: {
+    delay: 0,
+    quantity: 0
+  },
+  life: {
+    duration: 0.1,
+    count: 2
+  }
+});
 }
+
+random.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+
+
+
+
+
 
 
 

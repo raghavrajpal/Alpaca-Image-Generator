@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tsparticles@1.42.4/tsparticles.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tsparticles-preset-confetti@1.42.4/tsparticles.preset.confetti.min.js"></script>
+
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -73,10 +76,14 @@
             </div>
             </div>
 
-            <div class="col s12 rrcard" style="margin-top: 15px;">
+            <div class="col s12 center-align rrcard" style="margin-top: 15px;">
                 <button id="random" class="btn waves-effect waves-light rand-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 122.88 105.71" style="width: 20px;vertical-align: sub;" xml:space="preserve"><g><path class="st0" d="M0,79.45c-0.02-1.95,0.76-3.06,2.51-3.18h14.08c5.98,0,8.89,0.16,13.98-3.91c1.08-0.86,2.1-1.86,3.06-3 c4.55-5.41,6.17-11.96,7.87-18.9C44.79,37,50.03,22.78,63.98,17.15c7.94-3.2,18.82-2.59,27.41-2.59h5.27l0.01-10.05 c0-5.01,1.18-5.88,4.79-2.45l19.55,18.58c2.36,2.24,2.03,3.7-0.22,5.86L101.49,45c-3.37,3.41-4.89,2.45-4.82-2.26v-11.8 c-34-0.52-32.57,1.67-42.05,34.09c-3.5,10.04-8.81,17.08-15.59,21.69c-7.09,4.82-13.68,6.39-22.02,6.39H6.65 C0.71,93.11,0,92.83,0,86.75V79.45L0,79.45z M0.23,26.26c-0.02,1.95,0.76,3.06,2.51,3.18h14.7c5.98,0,8.89-0.16,13.98,3.91 c1.08,0.86,2.1,1.86,3.06,3c1.16,1.38,2.13,2.84,2.96,4.35c1.5-4.69,3.36-9.29,5.82-13.5c0.7-1.19,1.44-2.35,2.23-3.48 c-1.74-1.8-3.61-3.37-5.61-4.73c-7.09-4.82-13.68-6.39-22.02-6.39H6.88c-5.94,0-6.65,0.28-6.65,6.36V26.26L0.23,26.26z M53.57,80.45c2.96,3.42,6.63,6.24,11.27,8.11c7.94,3.2,18.21,2.59,26.8,2.59h5.27l0.01,10.05c0,5.01,1.18,5.88,4.79,2.45 l19.55-18.58c2.36-2.24,2.03-3.7-0.22-5.86l-19.3-18.5c-3.37-3.41-4.89-2.45-4.82,2.26v11.8c-24.78,0.38-30.42-0.69-35.32-13.84 c-0.27,0.94-0.64,2.23-1.93,6.65c-0.03,0.1-0.06,0.19-0.09,0.28l0,0C57.91,72.62,55.9,76.79,53.57,80.45L53.57,80.45z" style="fill: white; "></path></g></svg>
                     Random
+                </button>
+                <button id="download" class="btn waves-effect waves-light dwnld-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 512 512" style="width: 22px;vertical-align: text-top;"><path class="cls-1" d="M386.91,117.6A159,159,0,0,0,245.33,32C168.71,32,103.48,86.89,88.65,160.28A96,96,0,0,0,96,352H234.67v66.8l-30.83-20.55a21.33,21.33,0,1,0-23.67,35.5l63.76,42.5A21.17,21.17,0,0,0,255.73,480h.53a21.17,21.17,0,0,0,11.81-3.75l63.76-42.5a21.33,21.33,0,1,0-23.67-35.5L277.33,418.8V352H394.67A117.47,117.47,0,0,0,512,234.67C512,167.39,454.75,113,386.91,117.6Zm7.76,191.73H277.33v-64a21.33,21.33,0,1,0-42.67,0v64H96a53.33,53.33,0,0,1,0-106.67,52.75,52.75,0,0,1,8,.69l22.86,3.46,1.61-23.07C132.7,122.58,184,74.67,245.33,74.67a116.71,116.71,0,0,1,109,74.12L361,165.6l17.69-3.84c47.74-10.41,90.64,26.52,90.64,72.91A74.75,74.75,0,0,1,394.67,309.33Z" style="fill: white;"></path></svg>
+                    Download
                 </button>
             </div>
 
@@ -187,10 +194,9 @@
 
 
 
-
-
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="javascript/materialize.js"></script>
     <script type="text/javascript" src="javascript/AIG.js"></script>
+    
 </body>
 </html>
