@@ -122,156 +122,297 @@ const eyes_section = document.getElementById('section_eyes');
 const accessories_section = document.getElementById('section_accessories');           
 const style_section = document.getElementById('section-style');
 
-//display & hide secrions on primary button click
+
+//All secondary buttons select acc to section
+const bgBtnAll = document.querySelectorAll('.btn-bg');
+const neckBtnAll = document.querySelectorAll('.btn-neck');
+const earsBtnAll = document.querySelectorAll('.btn-ears');
+const legBtnAll = document.querySelectorAll('.btn-leg');
+const hairBtnAll =document.querySelectorAll('.btn-hair');
+const mouthBtnAll = document.querySelectorAll('.btn-mouth');
+const eyesBtnAll = document.querySelectorAll('.btn-eyes');
+const accBtnAll = document.querySelectorAll('.btn-accessories');
+
+//display & hide sections on primary button click
+
+function hide(ids){
+    ids.forEach(id => {
+      id.style.display ='none';
+    });
+  }
+  
+  function show(ids){
+    ids.forEach(id => {
+      id.style.display ='block';
+    });
+  }
 
 background_btn.onclick = function() {
-    style_section.style.display = "block";
-    seconday_heading.style.display = "block";
-    background_section.style.display = "block";
-    neck_section.style.display = "none";
-    ears_section.style.display = "none";
-    leg_section.style.display = "none";
-    hair_section.style.display = "none";
-    mouth_section.style.display = "none";
-    eyes_section.style.display = "none";
-    accessories_section.style.display = "none";
+
+    show([
+        style_section, 
+        seconday_heading, 
+        background_section 
+    ]);
+
+    hide([
+    neck_section,
+    ears_section,
+    leg_section,
+    hair_section,
+    mouth_section,
+    eyes_section,
+    accessories_section
+        ]);
 }
 
 neck_btn.onclick = function() {
-    style_section.style.display = "block";
-    seconday_heading.style.display = "block";
-    neck_section.style.display = "block";
-    background_section.style.display = "none";
-    ears_section.style.display = "none";
-    leg_section.style.display = "none";
-    hair_section.style.display = "none";
-    mouth_section.style.display = "none";
-    eyes_section.style.display = "none";
-    accessories_section.style.display = "none";
+
+    show([style_section,
+        seconday_heading,
+        neck_section,
+    ]);
+
+    hide([background_section,
+        ears_section,
+        leg_section,
+        hair_section,
+        mouth_section,
+        eyes_section,
+        accessories_section]);
+
 }
 
 ears_btn.onclick = function() {
-    style_section.style.display = "block";
-    seconday_heading.style.display = "block";
-    ears_section.style.display = "block";
-    neck_section.style.display = "none";
-    background_section.style.display = "none";
-    leg_section.style.display = "none";
-    hair_section.style.display = "none";
-    mouth_section.style.display = "none";
-    eyes_section.style.display = "none";
-    accessories_section.style.display = "none";
+
+    show([style_section,
+        seconday_heading,
+        ears_section,]);
+
+    hide([neck_section,
+        background_section,
+        leg_section,
+        hair_section,
+        mouth_section,
+        eyes_section,
+        accessories_section,]);
+
 }
+
 leg_btn.onclick = function() {
-    style_section.style.display = "block";
-    seconday_heading.style.display = "block";
-    leg_section.style.display = "block";
-    neck_section.style.display = "none";
-    ears_section.style.display = "none";
-    background_section.style.display = "none";
-    hair_section.style.display = "none";
-    mouth_section.style.display = "none";
-    eyes_section.style.display = "none";
-    accessories_section.style.display = "none";
+
+    show([style_section,
+        seconday_heading,
+        leg_section,]);
+
+    hide([neck_section,
+        ears_section,
+        background_section,
+        hair_section,
+        mouth_section,
+        eyes_section,
+        accessories_section,]);
+
 }
+
 hair_btn.onclick = function() {
-    style_section.style.display = "block";
-    seconday_heading.style.display = "block";
-    hair_section.style.display = "block";
-    neck_section.style.display = "none";
-    ears_section.style.display = "none";
-    leg_section.style.display = "none";
-    background_section.style.display = "none";
-    mouth_section.style.display = "none";
-    eyes_section.style.display = "none";
-    accessories_section.style.display = "none";
+    
+    show([style_section,
+        seconday_heading,
+        hair_section,]);
+
+    hide([neck_section,
+        ears_section,
+        leg_section,
+        background_section,
+        mouth_section,
+        eyes_section,
+        accessories_section,]);
+
 }
+
 mouth_btn.onclick = function() {
-    style_section.style.display = "block";
-    seconday_heading.style.display = "block";
-    mouth_section.style.display = "block";
-    neck_section.style.display = "none";
-    ears_section.style.display = "none";
-    leg_section.style.display = "none";
-    hair_section.style.display = "none";
-    background_section.style.display = "none";
-    eyes_section.style.display = "none";
-    accessories_section.style.display = "none";
+
+    show([style_section,
+        seconday_heading,
+        mouth_section,]);
+
+    hide([neck_section,
+        ears_section,
+        leg_section,
+        hair_section,
+        background_section,
+        eyes_section,
+        accessories_section,]);
+
 }
+
 eyes_btn.onclick = function() {
-    style_section.style.display = "block";
-    seconday_heading.style.display = "block";
-    eyes_section.style.display = "block";
-    neck_section.style.display = "none";
-    ears_section.style.display = "none";
-    leg_section.style.display = "none";
-    hair_section.style.display = "none";
-    mouth_section.style.display = "none";
-    background_section.style.display = "none";
-    accessories_section.style.display = "none";
+
+    show([style_section,
+        seconday_heading,
+        eyes_section,]);
+
+    hide([neck_section,
+        ears_section,
+        leg_section,
+        hair_section,
+        mouth_section,
+        background_section,
+        accessories_section,]);
+
 }
 accessories_btn.onclick = function() {
-    style_section.style.display = "block";
-    seconday_heading.style.display = "block";
-    accessories_section.style.display = "block";
-    neck_section.style.display = "none";
-    ears_section.style.display = "none";
-    leg_section.style.display = "none";
-    hair_section.style.display = "none";
-    mouth_section.style.display = "none";
-    eyes_section.style.display = "none";
-    background_section.style.display = "none";
+
+    show([style_section,
+        seconday_heading,
+        accessories_section,]);
+
+    hide([neck_section,
+        ears_section,
+        leg_section,
+        hair_section,
+        mouth_section,
+        eyes_section,
+        background_section]);   
+
 }
+
+// Button state Active 
+
 
 //Image Change Js
 
-document.querySelectorAll('.btn-bg').forEach(item => {
+bgBtnAll.forEach(item => {
+
     item.addEventListener('click', (event) => {
-      document.getElementById('back_img').src = "/assets/alpaca/backgrounds/" + event.target.value + ".png";
+
+        document.getElementById('back_img').src = "/assets/alpaca/backgrounds/" + event.target.value + ".png";
+      
+        bgBtnAll.forEach(e => {
+            e.classList.remove('active-bg');});
+
+            event.target.classList.add('active-bg');
+
   })
   })
 
-  document.querySelectorAll('.btn-neck').forEach(item => {
+  neckBtnAll.forEach(item => {
     item.addEventListener('click', (event) => {
       document.getElementById('neck_img').src = "/assets/alpaca/neck/" + event.target.value + ".png";
+      
+      neckBtnAll.forEach(e => {
+        e.classList.remove('active-bg');});
+        
+        event.target.classList.add('active-bg');
   })
   })
 
-  document.querySelectorAll('.btn-ears').forEach(item => {
+  earsBtnAll.forEach(item => {
     item.addEventListener('click', (event) => {
       document.getElementById('ears_img').src = "/assets/alpaca/ears/" + event.target.value + ".png";
-  })
+        
+      earsBtnAll.forEach(e => {
+        e.classList.remove('active-bg');});
+        
+        event.target.classList.add('active-bg');
+  
+    })
   })
 
-  document.querySelectorAll('.btn-leg').forEach(item => {
+  legBtnAll.forEach(item => {
     item.addEventListener('click', (event) => {
       document.getElementById('leg_img').src = "/assets/alpaca/leg/" + event.target.value + ".png";
+
+      legBtnAll.forEach(e => {
+        e.classList.remove('active-bg');});
+        
+        event.target.classList.add('active-bg');
+
+
   })
   })
 
-  document.querySelectorAll('.btn-hair').forEach(item => {
+  hairBtnAll.forEach(item => {
     item.addEventListener('click', (event) => {
       document.getElementById('hair_img').src = "/assets/alpaca/hair/" + event.target.value + ".png";
+
+      hairBtnAll.forEach(e => {
+        e.classList.remove('active-bg');});
+        
+        event.target.classList.add('active-bg');
+
+
   })
   })
 
-  document.querySelectorAll('.btn-mouth').forEach(item => {
+  mouthBtnAll.forEach(item => {
     item.addEventListener('click', (event) => {
       document.getElementById('mouth_img').src = "/assets/alpaca/mouth/" + event.target.value + ".png";
+
+      mouthBtnAll.forEach(e => {
+        e.classList.remove('active-bg');});
+        
+        event.target.classList.add('active-bg');
+
+
   })
   })
 
-  document.querySelectorAll('.btn-eyes').forEach(item => {
+  eyesBtnAll.forEach(item => {
     item.addEventListener('click', (event) => {
       document.getElementById('eyes_img').src = "/assets/alpaca/eyes/" + event.target.value + ".png";
+
+      eyesBtnAll.forEach(e => {
+        e.classList.remove('active-bg');});
+        
+        event.target.classList.add('active-bg');
+
+
   })
   })
 
-  document.querySelectorAll('.btn-accessories').forEach(item => {
+  accBtnAll.forEach(item => {
     item.addEventListener('click', (event) => {
       document.getElementById('accessories_img').src = "/assets/alpaca/accessories/" + event.target.value + ".png";
+
+      accBtnAll.forEach(e => {
+        e.classList.remove('active-bg');});
+        
+        event.target.classList.add('active-bg');
+
+
   })
   })
+
+  document.querySelectorAll('.btn-acc').forEach(item => {
+    item.addEventListener('click', (event) => {
+      document.querySelectorAll('.btn-acc').forEach(e => {
+        e.classList.remove('active-bg');});
+        
+        event.target.classList.add('active-bg');
+
+    });
+  });
+
+//random Click
+
+const random = document.getElementById('random');
+
+  function randomBtnClick(x){
+    x[Math.floor(Math.random() * x.length)].click();
+ }
+
+ random.onclick = function(){ 
+ randomBtnClick(bgBtnAll);
+ randomBtnClick(neckBtnAll);
+ randomBtnClick(earsBtnAll);
+ randomBtnClick(legBtnAll);
+ randomBtnClick(hairBtnAll);
+ randomBtnClick(mouthBtnAll);
+ randomBtnClick(eyesBtnAll);
+ randomBtnClick(accBtnAll);
+}
 
 
 

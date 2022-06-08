@@ -23,6 +23,12 @@
 /*FONT FILES END*/  
 
 
+/*OVERRIDDEN*/
+.row .col{
+  padding: 0px 2rem;
+}
+
+
 body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #4923d5, #23d5ab);
     color:white;
@@ -43,6 +49,37 @@ button.btn {
     position: relative;
 }
 
+.button-rr, .rand-btn {
+  border: 2px solid #00193d;
+  line-height: 0px;
+  box-shadow: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.rand-btn {
+  background: #00193d;
+  color:white;
+}
+
+.button-rr{
+background: transparent;
+color: #00193d;
+}
+
+.button-rr:hover {
+  background-color: #00193de6;
+  color: white;
+}
+
+.active-bg{
+  background-color: #00193d!important;
+  color:white;
+}
+
+
+
+
 #section-style,
 #secondary-heading-2,
 #section_background,
@@ -57,8 +94,6 @@ button.btn {
 }
 
 .rrcard {
-    width: auto!important;
-    height: auto;
     background: white;
     padding: 23px!important;
     border-radius: 8px;
@@ -89,6 +124,7 @@ div#section-style {
     backdrop-filter: blur(2px);
     height: 100vh;
 }
+
 
 @keyframes gradient {
 	0% {
