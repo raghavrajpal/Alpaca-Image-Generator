@@ -395,7 +395,7 @@ bgBtnAll.forEach(item => {
     });
   });
 
-//random style & button color onclick
+//random image style & button color and confetti on random button click
 
 loadConfettiPreset(tsParticles);
 
@@ -456,6 +456,23 @@ const random = document.getElementById('random');
 
 random.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
 
+//Download button html to canvas
+
+const downloadBtn = document.getElementById('download');
+
+downloadBtn.addEventListener('click', function () {
+
+  html2canvas( document.getElementById('aig') ).then((canvas) => {
+    let a = document.createElement("a");
+    a.href = canvas
+      .toDataURL("image/jpeg")
+      .replace("image/jpeg", "image/octet-stream");
+
+    a.download = "Alpaca.jpg";
+    a.click();
+  });
+
+});
 
 
 
