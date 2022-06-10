@@ -58,9 +58,16 @@ button.btn {
 }
 
 .rand-btn, .dwnld-btn {
-  background: #00193d;
   color:white;
   border: none;
+}
+
+.rand-btn {
+  background: #0e64db;
+}
+
+.dwnld-btn {
+  background: #00193d;
 }
 
 .button-rr{
