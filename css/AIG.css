@@ -140,33 +140,6 @@ div#section-style {
 }
 
 
-
-/* .grad-back {
-    background: linear-gradient(317deg, #00d0ff, #119bea, #1162ea, #1129ea, #1116ea, #8911ea, #ea11d8, #ea1182, #11eae2);
-    background-size: 1800% 1800%;
-
-    -webkit-animation: gradient-back 10s ease infinite;
-    -moz-animation: gradient-back 10s ease infinite;
-    animation: gradient-back 10s ease infinite;
-}
-
-@-webkit-keyframes gradient-back {
-    0%{background-position:4% 0%}
-    50%{background-position:97% 100%}
-    100%{background-position:4% 0%}
-}
-@-moz-keyframes gradient-back {
-    0%{background-position:4% 0%}
-    50%{background-position:97% 100%}
-    100%{background-position:4% 0%}
-}
-@keyframes gradient-back {
-    0%{background-position:4% 0%}
-    50%{background-position:97% 100%}
-    100%{background-position:4% 0%}
-} */
-
-
   
   .particle {
     position: absolute;
@@ -1091,4 +1064,19 @@ div#section-style {
             animation-delay: -8s;
     transform: translate3d(14vw, 44vh, 33px);
     background: #18b6da;
+  }
+
+
+  /*Media Queries*/
+
+  @media only screen and (max-width: 992px){
+    .section-btn{
+      margin-top: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 768px){
+    .primary-heading{
+      font-size: 2.56rem;
+    }
   }
